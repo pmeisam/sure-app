@@ -1,0 +1,38 @@
+.newsNav {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  background-color: #039be5;
+}
+.tab {
+  padding: 10px 30px;
+  color: white;
+  font-weight: 600;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 10px;
+  line-height: 2;
+  text-align: center;
+}
+.tab:hover {
+  background-color: rgba(56, 165, 219);
+  text-decoration: none;
+  color: white;
+}
+.tab span {
+  background-color: #ff7043;
+  color: white;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+@media screen and (min-width: 600px) {
+  .tab {
+    padding: 20px 50px;
+  }
+  .tab span {
+    line-height: 0;
+    margin-left: 10px;
+  }
+}

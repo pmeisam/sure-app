@@ -1,0 +1,242 @@
+.partners {
+  background-color: #f6f9fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  margin-top: 70px;
+}
+
+.chubb {
+  height: 20px;
+}
+.nationWide {
+  height: 55px;
+  margin: 20px 0;
+}
+.qbe {
+  height: 45px;
+  margin: 0 0 20px 0;
+}
+.assurant {
+  height: 45px;
+}
+.solutions {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+.solutionHeading {
+  font-size: 30px;
+  color: #039be5;
+  font-weight: 300;
+  width: 50%;
+  margin: 0 auto;
+  grid-area: solutionHeading;
+  text-align: center;
+}
+.solutionContents {
+  width: 100%;
+  text-align: center;
+  grid-area: solutionContents;
+}
+.solutionContents p {
+  width: 300px;
+  line-height: 32px;
+  letter-spacing: 0.74px;
+  color: #6b7c93;
+  margin: 0 auto;
+}
+.solutionContents h4 {
+  color: #6b7c93;
+  font-weight: 200px;
+  font-size: 22px;
+  margin-top: 30px;
+}
+.solutionImg {
+  width: 45px;
+}
+.card {
+  width: 90%;
+  max-height: 250px;
+  height: 250px;
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+}
+.coverages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.coverageBg {
+  background-repeat: no-repeat;
+  background-position-x: 83%;
+  padding: 50px 0;
+  background-size: 485% 2300px;
+}
+.pet {
+  grid-area: pet;
+}
+.travel {
+  grid-area: travel;
+}
+.property {
+  grid-area: property;
+}
+.event {
+  grid-area: event;
+}
+.home {
+  grid-area: home;
+}
+.coverages h1 {
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin: 240px auto 0 auto;
+  font-weight: 100;
+  grid-area: heading;
+}
+.card img {
+  width: 120px;
+  margin-top: 30px;
+}
+.cardHeading {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 20px;
+  letter-spacing: 0.74px;
+  color: #016cb7;
+}
+.cardP {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6b7c93;
+}
+.card div {
+  width: 70%;
+  margin-top: 15px;
+}
+.contactForm {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-color: #6b7c93;
+  background-blend-mode: multiply;
+  mix-blend-mode: normal;
+  opacity: 0.84;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactForm input {
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  width: 90%;
+  padding: 5px 10px 9px 10px;
+  /* height: 30px; */
+}
+.contactForm input::placeholder {
+  font-size: 10px;
+  font-weight: 100;
+  line-height: -10px;
+}
+.submitBtn {
+  color: white;
+  background-color: #ff7043;
+  font-weight: 100;
+  font-size: 14px;
+  height: 40px;
+}
+.contactForm p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 100;
+  color: white;
+  font-size: 35px;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .submitBtn {
+    font-weight: 100;
+    font-size: 17px;
+  }
+  .contactForm input {
+    width: 35%;
+  }
+  .contactForm p {
+    font-size: 33px;
+  }
+  .partners {
+    flex-direction: row;
+  }
+  .solutions {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "solutionHeading solutionContents";
+    margin: 80px auto 0 auto;
+  }
+  .coverageBg {
+    background-position-x: 100%;
+    padding: 50px 0;
+    background-size: 100% 1700px;
+  }
+  .solutionImg {
+    width: 80px;
+    margin-left: -80px;
+  }
+  .solutionHeading {
+    text-align: left;
+    font-size: 4vw;
+    margin-left: 50%;
+  }
+  .solutionContents {
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .solutionContents h4 {
+    margin: 0;
+  }
+  .coverages {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "heading heading heading heading"
+      "pet pet travel travel"
+      "property property event event"
+      ". home home .";
+    width: 80%;
+    margin: 0 auto;
+  }
+  .card {
+    max-height: 150px;
+    flex-direction: row;
+    text-align: left;
+  }
+  .cardP {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .cardHeading {
+    font-size: 17px;
+  }
+  .card img {
+    margin-top: 0;
+    margin-left: 20px;
+    width: 90px;
+  }
+}

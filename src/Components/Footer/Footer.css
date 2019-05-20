@@ -1,0 +1,43 @@
+.footer{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  width: 90%;
+  margin: 30px auto;
+  height: 400px;
+}
+footer i {
+  color: #039be5;
+  margin: 0 20px;
+}
+footer h1 {
+    color: #039BE5;
+    font-weight: 900;
+}
+footer p {
+    color: #6B7C93;
+    font-size: 14px;
+    margin: 0;
+}
+.footerLink{
+    color: #039BE5;
+    font-size: 14px;
+}
+.footerLink:hover {
+    text-decoration: none;
+}
+footer span {
+  margin-left: -18px;
+}
+@media only screen and ( min-width: 600px ){
+  .footer {
+    flex-direction: row;
+    height: 100px;
+    margin: 0 auto;
+  }
+  footer span {
+    margin: 0;
+  }
+}

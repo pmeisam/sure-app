@@ -1,0 +1,33 @@
+.navbar-light .navbar-brand {
+    color: #039BE5;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0;
+}
+.navbar-light .navbar-toggler {
+    color: #039BE5;
+}
+@media only screen and (min-width: 600px){
+    .navbar-light .navbar-brand {
+        color: white;
+        margin-left: 10%;
+        margin-right: 5%;
+        font-size: 35px;
+    }
+    .bg-light {
+        background-color: transparent!important;
+        border: none!important;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+    .btn-outline-secondary {
+        color: white;
+        margin: 5px 10px;
+        padding: 5px 25px;
+        border-color: white;
+    }
+    .navRightIcons {
+        margin-left: auto;
+    }
+}
