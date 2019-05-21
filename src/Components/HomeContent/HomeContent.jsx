@@ -7,7 +7,7 @@ class HomeContent extends Component {
       <div>
         <div className="partners">
           <img className="chubb" src="./images/chubb.png" alt="" />
-          <img className="nationWide" src="./images/nationWide.png" alt="" />
+          <img className="nationWide" src="./images/Nationwide.png" alt="" />
           <img className="qbe" src="./images/qbe.png" alt="" />
           <img className="assurant" src="./images/assurant.png" alt="" />
         </div>
