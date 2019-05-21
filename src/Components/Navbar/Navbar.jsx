@@ -20,7 +20,7 @@ function Navbar() {
           aria-label="Toggle navigation"
           style={{ color: "#039BE5", border: "none" }}
         >
-          <i class="fas fa-bars" />
+          <i className="fas fa-bars" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">

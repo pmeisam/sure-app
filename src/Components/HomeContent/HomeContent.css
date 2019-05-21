@@ -28,10 +28,10 @@
   margin: 40px 0;
 }
 .solutionHeading {
-  font-size: 30px;
+  font-size: 42px;
   color: #039be5;
   font-weight: 300;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   grid-area: solutionHeading;
   text-align: center;
@@ -50,7 +50,7 @@
 }
 .solutionContents h4 {
   color: #6b7c93;
-  font-weight: 200px;
+  font-weight: 700;
   font-size: 22px;
   margin-top: 30px;
 }
@@ -61,7 +61,7 @@
   width: 90%;
   max-height: 250px;
   height: 250px;
-  margin: 30px 20px;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -96,7 +96,7 @@
 .home {
   grid-area: home;
 }
-.coverages h1 {
+.coveragesHeading {
   color: white;
   text-align: center;
   width: 70%;
@@ -127,12 +127,11 @@
 }
 .contactForm {
   width: 100%;
-  height: 500px;
+  height: 700px;
   background-size: cover;
   background-color: #6b7c93;
   background-blend-mode: multiply;
   mix-blend-mode: normal;
-  opacity: 0.84;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,11 +142,11 @@
   margin: 5px;
   border-radius: 5px;
   width: 90%;
-  padding: 5px 10px 9px 10px;
+  padding: 10px 10px 15px 10px;
   /* height: 30px; */
 }
 .contactForm input::placeholder {
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 100;
   line-height: -10px;
 }
@@ -156,42 +155,23 @@
   background-color: #ff7043;
   font-weight: 100;
   font-size: 14px;
-  height: 40px;
+  height: 50px;
 }
 .contactForm p {
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  font-weight: 100;
+  font-weight: 400;
   color: white;
-  font-size: 35px;
+  font-size: 50px;
+  text-align: center;
 }
-
-
-@media only screen and (min-width: 600px) {
-  .submitBtn {
-    font-weight: 100;
-    font-size: 17px;
-  }
-  .contactForm input {
-    width: 35%;
-  }
-  .contactForm p {
-    font-size: 33px;
-  }
-  .partners {
-    flex-direction: row;
-  }
+@media only screen and (min-width: 950px) {
   .solutions {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "solutionHeading solutionContents";
     margin: 80px auto 0 auto;
-  }
-  .coverageBg {
-    background-position-x: 100%;
-    padding: 50px 0;
-    background-size: 100% 1700px;
   }
   .solutionImg {
     width: 80px;
@@ -199,7 +179,7 @@
   }
   .solutionHeading {
     text-align: left;
-    font-size: 4vw;
+    font-size: 55px;
     margin-left: 50%;
   }
   .solutionContents {
@@ -210,29 +190,55 @@
   .solutionContents h4 {
     margin: 0;
   }
+}
+@media only screen and (min-width: 600px) {
+  .submitBtn {
+    font-weight: 100;
+    font-size: 17px;
+  }
+  .contactForm input {
+    width: 500px;
+  }
+  .contactForm p {
+    font-size: 33px;
+  }
+  .partners {
+    flex-direction: row;
+  }
+
+  .coverageBg {
+    background-position-x: 100%;
+    padding: 50px 0;
+    background-size: 100% 1700px;
+  }
+  .coveragesHeading {
+    font-size: 55px;
+    width: 63%;
+  }
+
   .coverages {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-      "heading heading heading heading"
-      "pet pet travel travel"
-      "property property event event"
-      ". home home .";
-    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "pet pet travel travel" "property property event event" ". home home .";
+    max-width: 90%;
+    width: 65%;
     margin: 0 auto;
   }
   .card {
-    max-height: 150px;
+    max-height: 165px;
     flex-direction: row;
     text-align: left;
+    max-width: 400px;
   }
   .cardP {
     font-size: 15px;
-    margin-right: 20px;
+    max-width: 220px;
+    /* margin-right: 20px; */
   }
   .cardHeading {
     font-size: 17px;
+    max-width: 160px;
   }
   .card img {
     margin-top: 0;

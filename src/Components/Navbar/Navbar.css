@@ -7,12 +7,12 @@
 .navbar-light .navbar-toggler {
     color: #039BE5;
 }
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 992px){
     .navbar-light .navbar-brand {
         color: white;
         margin-left: 10%;
         margin-right: 5%;
-        font-size: 35px;
+        font-size: 55px;
     }
     .bg-light {
         background-color: transparent!important;
@@ -25,6 +25,11 @@
         color: white;
         margin: 5px 10px;
         padding: 5px 25px;
+        border-color: white;
+    }
+    .btn-outline-secondary:hover {
+        background-color: white;
+        color: rgb(12, 119, 161);
         border-color: white;
     }
     .navRightIcons {

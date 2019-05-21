@@ -3,7 +3,8 @@
   border-radius: 5px;
   border: none;
   color: white;
-  padding: 5px 30px;
+  padding: 17px 100px;
+  margin-top: 30px;
 }
 .headerLink:hover {
   color: white;
@@ -17,7 +18,7 @@
   text-align: center;
   color: white;
   background-repeat: no-repeat;
-  background-size: 100% 500px;
+  background-size: 100% 560px;
 }
 .header h1 {
   z-index: 5;
@@ -35,8 +36,8 @@
 }
 .headerImg {
   margin-top: 50px;
-  width: 95%;
-  max-width: 811px;
+  width: 92%;
+  max-width: 930px;
   height: auto;
 }
 
@@ -48,15 +49,16 @@
 
 @media only screen and ( min-width: 600px){
   .header {
-    margin-top: -100px;
-    padding-top: 100px;
-    background-size: 100% 700px;
+    margin-top: -120px;
+    padding-top: 80px;
+    background-size: 100% 830px;
   }
   .header h1 {
     margin-top: 50px;
-    font-size: 45px;
+    font-size: 69px;
+    letter-spacing: 1px;
   }
   .header p {
-    font-size: 16px;
+    font-size: 33px;
   }
 }

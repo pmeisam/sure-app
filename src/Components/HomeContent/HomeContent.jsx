@@ -48,10 +48,10 @@ class HomeContent extends Component {
           </div>
         </div>
         <div className='coverageBg' style={{ backgroundImage: "url('./images/blue-bg.png')" }}>
-          <div className='coverages' >
-            <h1>
+            <h1 className="coveragesHeading">
               Our partners come in all shapes and sizes, just like our policies.
             </h1>
+          <div className='coverages' >
             <div className="card pet">
               <img src="./images/icon-pet.svg" alt="" />
               <div>
